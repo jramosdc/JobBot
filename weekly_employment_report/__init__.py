@@ -18,3 +18,6 @@ app = services.FlaskService.get_instance(__name__)
 # Application's components ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from . import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+app.config.from_object('config')
+app.config.from_pyfile('config.py')
