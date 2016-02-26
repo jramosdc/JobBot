@@ -1,1 +1,1 @@
-web: python run.py
+web: gunicorn weekly_employment_report:app
