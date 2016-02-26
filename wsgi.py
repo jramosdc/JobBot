@@ -5,34 +5,6 @@ from weekly_employment_report import app
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-# Functions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-def build_command_line_interface_parser():
-    u"""Construye el analizador para la interfaz de línea de comandos."""
-
-    parser = argparse.ArgumentParser(
-        description=__doc__,
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter
-    )
-
-    parser.add_argument(
-        '-H',
-        '--host',
-        default='127.0.0.1',
-        help=u'Dirección del servidor de desarrollo'
-    )
-
-    parser.add_argument(
-        '-P',
-        '--port',
-        type=int,
-        default='5000',
-        help=u'Puerto del servidor de desarrollo'
-    )
-
-    return parser
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 # Main ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if __name__ == '__main__':
     # Obtener los argumentos suministrados por línea de comandos
