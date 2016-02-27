@@ -5,11 +5,11 @@ En este archivo se encuentran las vistas de la aplicación.
 """
 
 # Modules ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-import gspread
+##import gspread
 import nltk.data
 from flask import render_template
 from flask import request
-from oauth2client.client import SignedJwtAssertionCredentials
+##from oauth2client.client import SignedJwtAssertionCredentials
 
 from . import app
 from . import helpers
