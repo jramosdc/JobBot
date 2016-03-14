@@ -66,7 +66,7 @@ def index():
     lineas = tokenizer.tokenize(text)
     palabras = nltk.word_tokenize(text)
     cifra1 = u' '.join(palabras[54:58])
-    cifra2 = u' '.join(palabras[49:53]+[', according to data of the Department of Labor'])+linea0
+    cifra2 = u' '.join(palabras[49:53]+[', according to data of the Department of Labor.'])+linea0
     linea1 = u' '.join(palabras[36:62]).replace(u' ,', u',')
     linea2 = u' '.join(lineas[1:2])
     linea3 = u' '.join(lineas[4:5])
