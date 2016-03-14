@@ -23,7 +23,7 @@ pyasn1==0.1.9
 pyasn1-modules==0.0.8
 pycparser==2.14
 pyOpenSSL==0.15.1
-Python-USDOL==1.0
+[-e]git+https://github.com/mattdeboard/python-usdol.git#egg=Python-USDOL
 pytz==2015.7
 requests==2.9.1
 rsa==3.3
