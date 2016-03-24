@@ -62,14 +62,17 @@ def index():
         position=results.index(match)
         linea0=u' '.join([' The lowest since the week of']+[fecha[position]]+['.'])
     # Procesar
+    # Procesar
     tokenizer = nltk.data.load('nltk:tokenizers/punkt/english.pickle')
     lineas = tokenizer.tokenize(text)
-    palabras = nltk.word_tokenize(text)
-    cifra1 = u' '.join(palabras[54:58])
-    cifra2 = u' '.join(palabras[49:53]+[', according to data of the Department of Labor.'])+linea0
-    linea1 = u' '.join(palabras[36:62]).replace(u' ,', u',')
-    linea2 = u' '.join(lineas[1:2])
-    linea3 = u' '.join(lineas[4:5])
+    textlinea0=u' '.join(lineas[2:100])
+    lineas=tokenizer.tokenize(textlinea0)
+    palabras = nltk.word_tokenize(textlinea0)
+    cifra1 = u' '.join(palabras[25:36])
+    cifra2 = u' '.join(palabras[20:24]+[', according to data of the Department of Labor.'])+linea0
+    linea1 = u' '.join(palabras[7:33]).replace(u' ,', u',')
+    linea2 = u' '.join(lineas[2:3])
+    linea3 = u' '.join(lineas[5:6])
 
     # Obtener datos de desempleo de googlesheet
     sht1 = gc.open_by_key(app.config['SPREADSHEET_ID'])
