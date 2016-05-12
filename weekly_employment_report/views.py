@@ -73,6 +73,8 @@ def index():
     linea1 = u' '.join(palabras[7:33]).replace(u' ,', u',')
     linea2 = u' '.join(lineas[2:3])
     linea3 = u' '.join(lineas[5:6])
+    linea4 = u' '.join(lineas[3:4])
+    linea4b = u' '.join(lineas[8:10])
 
     # Obtener datos de desempleo de googlesheet
     sht1 = gc.open_by_key(app.config['SPREADSHEET_ID'])
@@ -86,6 +88,8 @@ def index():
         linea1=linea1,
         linea2=linea2,
         linea3=linea3,
+        linea4=linea4,
+        linea4b=linea4b,
         linea5=linea5
     ))
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
