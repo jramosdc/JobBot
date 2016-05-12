@@ -72,7 +72,7 @@ def index():
     linea2 = u' '.join(lineas[1:2])
     linea3 = u' '.join(lineas[3:4])
     linea4 = u' '.join(lineas[4:5])
-    linea4b = u' '.join(lineas[8:10])
+    linea4b = u' '.join(lineas[7:9])
 
     # Obtener datos de desempleo de googlesheet
     sht1 = gc.open_by_key(app.config['SPREADSHEET_ID'])
